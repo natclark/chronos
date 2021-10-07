@@ -1,0 +1,30 @@
+{
+    "name": "chronos",
+    "version": "0.0.0",
+    "author": "Nathan Clark",
+    "license": "GPL-3.0",
+    "scripts": {
+        "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
+        "smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
+        "smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark",
+        "dev": "svelte-kit dev",
+        "build": "npm run prepare && svelte-kit build",
+        "preview": "svelte-kit preview"
+    },
+    "devDependencies": {
+        "@sveltejs/adapter-static": "^1.0.0-next.13",
+        "@sveltejs/kit": "next",
+        "autoprefixer": "^10.3.4",
+        "cssnano": "^5.0.8",
+        "postcss-nested": "^5.0.6",
+        "sass": "^1.39.0",
+        "svelte": "^3.34.0",
+        "svelte-preprocess": "^4.9.2"
+    },
+    "dependencies": {
+        "@smui/button": "^5.0.0-beta.7",
+        "smui-theme": "^5.0.0-beta.5",
+        "svelte-web3": "^2.2.0"
+    },
+    "type": "module"
+}

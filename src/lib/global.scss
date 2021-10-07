@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0s !important;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden scroll;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Ubuntu, system-ui, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
